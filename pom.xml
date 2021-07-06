@@ -103,5 +103,21 @@
             <version>5.3.8</version>
         </dependency>
     </dependencies>
-
+    <build>
+        <finalName>SSM</finalName>
+        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
+                    <configuration>
+                        <port>8080</port>
+                        <uriEncoding>UTF-8</uriEncoding>
+                        <server>tomcat7</server>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
