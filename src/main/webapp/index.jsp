@@ -5,16 +5,6 @@
   </head>
   <body>
 
-  <a href="hello">hello</a>
-  <%System.out.println("来到页面了...."); %>
-
-  <form action="updateBook" method="post">
-    <input type="hidden" name="id" value="100"/>
-    书名：西游记<br/>
-    作者：<input type="text" name="author"/><br/>
-    价格：<input type="text" name="price"/><br/>
-    库存：<input type="text" name="stock"/><br/>
-    销量：<input type="text" name="sales"/><br/>
-    <input type="submit" value="修改图书"/>
+  <a href="getTea?id=1">查询teacher在success页面显示</a>
   </body>
 </html>
